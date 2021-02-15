@@ -34,3 +34,33 @@ var questionArr = [
     }
     
   ];
+
+  var highScores = [
+    {
+      name: "ABC",
+      score: 2
+    },
+    {
+      name: "XYZ",
+      score: 1
+    }
+  ]
+
+  for(let i=0;i<questionArr.length;i++) {
+    check(questionArr[i].question,questionArr[i].ans);
+  }
+
+console.log("High scorers");
+for(let i=0;i<highScores.length;i++) {
+  console.log(highScores[i].name + " " + highScores[i].score )
+}
+
+
+for(let i=0;i<highScores.length;i++) {
+    if(score>highScores[i].score) {
+      console.log("You've made it to the high scorers list");
+    }
+    break;
+  }
+  console.log("your final score",score);
+  console.log("Send me the screenshot, if you've beaten the high score");
